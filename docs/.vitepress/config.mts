@@ -19,7 +19,9 @@ export default defineConfig({
         {
           text: '博客文章',
           items: [
-            { text: '文章列表', link: '/posts/' }
+            { text: '文章列表', link: '/posts/' },
+            { text: '我的第一篇博客', link: '/posts/example-post-1' },
+            { text: '如何搭建个人博客', link: '/posts/example-post-2' }
           ]
         }
       ],
@@ -27,7 +29,8 @@ export default defineConfig({
         {
           text: '学习笔记',
           items: [
-            { text: '笔记列表', link: '/notes/' }
+            { text: '笔记列表', link: '/notes/' },
+            { text: 'JavaScript 学习笔记', link: '/notes/example-note-1' }
           ]
         }
       ]
