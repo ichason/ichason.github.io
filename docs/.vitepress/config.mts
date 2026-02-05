@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { generateSidebar } from 'vitepress-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -14,27 +15,24 @@ export default defineConfig({
       { text: '关于', link: '/about' }
     ],
 
-    sidebar: {
-      '/posts/': [
-        {
-          text: '博客文章',
-          items: [
-            { text: '文章列表', link: '/posts/' },
-            { text: '我的第一篇博客', link: '/posts/example-post-1' },
-            { text: '如何搭建个人博客', link: '/posts/example-post-2' }
-          ]
-        }
-      ],
-      '/notes/': [
-        {
-          text: '学习笔记',
-          items: [
-            { text: '笔记列表', link: '/notes/' },
-            { text: 'JavaScript 学习笔记', link: '/notes/example-note-1' }
-          ]
-        }
-      ]
-    },
+    sidebar: generateSidebar([
+      {
+        documentRootPath: 'docs',
+        scanStartPath: 'posts',
+        resolvePath: '/posts/',
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        sortMenusByFrontmatterOrder: true,
+      },
+      {
+        documentRootPath: 'docs',
+        scanStartPath: 'notes',
+        resolvePath: '/notes/',
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        sortMenusByFrontmatterOrder: true,
+      }
+    ]),
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ichason' }
