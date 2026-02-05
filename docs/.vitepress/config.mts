@@ -37,7 +37,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/chason' }
+      { icon: 'github', link: 'https://github.com/ichason' }
     ]
   }
 })
