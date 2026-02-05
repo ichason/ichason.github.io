@@ -5,11 +5,12 @@ hero:
   name: "The journey of life"
   text: "Record the moment"
   tagline: 记录学习和工作的点点滴滴，也许还有一些抱怨
+  actions:
+    - theme: brand
+      text: 博客文章
+      link: /posts/
+    - theme: alt
+      text: 学习笔记
+      link: /notes/
 ---
-
-<div style="text-align: center; margin-top: 2rem; font-size: 1.2rem;">
-  <a href="/posts/" style="text-decoration: underline; margin: 0 1rem;">博客文章</a>
-  <span>&</span>
-  <a href="/notes/" style="text-decoration: underline; margin: 0 1rem;">学习笔记</a>
-</div>
 
