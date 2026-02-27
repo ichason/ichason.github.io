@@ -6,5 +6,5 @@
 
 ## 联系方式
 
-- GitHub: [你的 GitHub 链接]
-- Email: [你的邮箱]
+- GitHub: [https://github.com/ichason](https://github.com/ichason)
+- Email: [7641436@qq.com](mailto:7641436@qq.com)
