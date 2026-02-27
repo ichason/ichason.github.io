@@ -7,11 +7,9 @@ export default defineConfig({
   title: "The journey of life",
   description: "Record the moment ",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '博客', link: '/posts/' },
-      { text: '笔记', link: '/notes/' },
+      { text: '文章', link: '/posts/' },
       { text: '关于', link: '/about' }
     ],
 
@@ -20,14 +18,6 @@ export default defineConfig({
         documentRootPath: 'docs',
         scanStartPath: 'posts',
         resolvePath: '/posts/',
-        useTitleFromFileHeading: true,
-        useFolderTitleFromIndexFile: true,
-        sortMenusByFrontmatterOrder: true,
-      },
-      {
-        documentRootPath: 'docs',
-        scanStartPath: 'notes',
-        resolvePath: '/notes/',
         useTitleFromFileHeading: true,
         useFolderTitleFromIndexFile: true,
         sortMenusByFrontmatterOrder: true,
